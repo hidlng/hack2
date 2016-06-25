@@ -33,5 +33,5 @@ led.unexport();    // 사용했던 GPIO자원을 해제한다.
 }, 5000); */
 
 http.createServer(function (req, res) {
-  console.log('check : ' + res)
+  console.log('check : ' + res.status)
 }).listen(8080);
