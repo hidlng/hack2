@@ -7,6 +7,7 @@ http.createServer(function (req, res) {
   req.on('end', function () {
 	    res.writeHead(200, {'Content-Type': 'text/plain'});
 	    res.end(jsonData);
+	    console.log(jsonData);
 /*    var reqObj = JSON.parse(jsonData);
     var resObj = {
       message: "Hello " + reqObj.name,
