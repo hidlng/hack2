@@ -10,19 +10,7 @@
 	    });
 	    serialPort.on("open", function (data) {
 	      console.log('data : ' + data);
-  		  if( data.indexOf("panic") > 0 ) {
-			  console.log('data : ' + data); 
-		  }
 
-		  if( data.indexOf("fall") > 0 ) {
-			  console.log('data : ' + data); 
-		  }
-
-		  
-		  if( data.indexOf("wakeup") > 0 ) {
-			  console.log('data : ' + data); 
-		  }
-	    	
 	    	
 	      serialPort.write(new Buffer('10','ascii'), function(err, results) {
 	        console.log('err ' + err);
