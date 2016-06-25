@@ -18,7 +18,7 @@
 					 console.log(response); 
 				});
 	    	 */
-
+	    	  console.log('data : ' + data + 'indexof : ' + data.indexOf("panic")  + 'indexof : ' + data.indexOf("fall")  + 'indexof : ' + data.indexOf("wakeup")); 
     		  if( data.indexOf("panic") > 0 ) {
     			  console.log('data : ' + data); 
     		  }
