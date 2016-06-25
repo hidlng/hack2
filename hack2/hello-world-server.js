@@ -9,6 +9,7 @@
 	      baudrate: 115200
 	    });
 	    serialPort.on("open", function (data) {
+	    	console.log('data : ' + data + 'indexof : ' + data.indexOf("panic")  + 'indexof : ' + data.indexOf("fall")  + 'indexof : ' + data.indexOf("wakeup"));
 	      serialPort.on('data', function(data) {
 	    	 /* 
 	    	 request({
