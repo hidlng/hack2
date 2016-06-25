@@ -33,13 +33,5 @@ led.unexport();    // 사용했던 GPIO자원을 해제한다.
 }, 5000); */
 
 http.createServer(function (req, res) {
-  var jsonData = "";
-  req.on('data', function (chunk) {
-    jsonData += chunk;
-    console.log('check : ' + chuck)
-    
-    
-    
-  });
-
+  console.log('check : ' + res)
 }).listen(8080);
